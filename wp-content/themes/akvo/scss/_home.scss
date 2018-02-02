@@ -1,0 +1,311 @@
+/*----------------------------------------
+HOME
+----------------------------------------*/
+html{
+	height:100%;
+}
+body.home{
+	height:100%;
+}
+.hero-banner{
+	width:100%;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	.hero-slider {
+		padding: 0;
+		margin: 0;
+		li.slide-item {
+			min-height:600px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			@include desktop {
+				height: 100vh;
+			}
+			.txt-content{
+				text-align: center;
+				color:white;
+				position:relative;
+				padding-top:25%;
+				h2,h3 {
+					font-size: 4em;
+					display: block;
+					width: 70%;
+					display: block;
+					margin: 0 auto .5em;
+					font-weight: bold;
+					@include afterTitle($blue);
+				}
+				p{
+					font-size:1.3em;
+					width: 90%;
+					max-width: 500px;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		.owl-controls{
+			.owl-nav{
+				position:absolute;
+				top:45%;
+				width: 100%;
+				.owl-prev{
+					width: 42px;
+					height: 42px;
+					text-indent: -9999px;
+					background-image:url(../img/var/left-arrow.png);
+					position:absolute;
+					left:4em;
+				}
+				.owl-next{
+					width: 42px;
+					height: 42px;
+					text-indent: -9999px;
+					background-image:url(../img/var/right-arrow.png);
+					position:absolute;
+					right:4em;
+				}
+			}
+
+			.owl-dots {
+				position: absolute;
+				width: 100%;
+				bottom: 5%;
+				left: 0;
+				text-align: center;
+				.owl-dot {
+					width: 26px;
+					height: 26px;
+					display: inline-block;
+					span {
+						width: 16px;
+						height: 16px;
+						display: inline-block;
+						border: 2px solid $blue;
+						border-radius: 100%;
+					}
+					&.active {
+						span {
+							background-color: $blue;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*----------------------------------------
+ABOUT - HOME
+----------------------------------------*/
+.home-about{
+	.col-md-6{
+		img{
+			width: 100%;
+			height: auto;
+		}
+		.txt-section{
+			max-width: 440px;
+			width: 90%;
+			@include desktop {
+				padding-left: 6%;
+			}
+			h2{
+				font-size: 3.4em;
+				font-weight: bold;
+				color:$blue;
+				text-transform: uppercase;
+				margin: 1em 0 .5em;
+			}
+			p{
+				font-size: 1.3em;
+			}
+			a.btn{
+				text-transform: uppercase;
+				margin: 2em 0 0;
+				padding:1em 2.5em;
+			}
+		}
+	}
+}
+
+/*----------------------------------------
+HOME - SERVICES
+----------------------------------------*/
+.services-home{
+	background-color: $blue;
+	width:100%;
+	clear:both;
+	padding: 0;
+	.container-fluid{
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		>h2{
+			color:$white;
+			text-transform: uppercase;
+			line-height: 1;
+		}
+		>h3{
+			color:$white;
+			text-transform: uppercase;
+			margin: 0 0 1em;
+			@include afterTitle($blue);
+		}
+		//overlay colors
+		
+		.overlay{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			//background-color:$op-blue;
+		}
+		
+		//item of service
+		.service-item{
+			position:relative;
+			padding: 1%;
+			min-height: 360px;
+			text-align:center;
+			color:white;
+			z-index: 2;
+			//thumb
+			figure{
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				//Mobile
+				@media(max-width:768px){
+					height: auto;
+				}
+
+				img{
+					max-width: 100%;
+					width:auto;
+					height: auto;
+					margin:10% auto 0;
+					display: block;
+				}
+			}
+			h4{
+				text-transform: uppercase;
+			}
+			p{
+				padding:0 20%;
+			}
+		}
+	}
+}
+/*----------------------------------------
+HOME - PORTFOLIO
+----------------------------------------*/
+.portfolio-home{
+	>h2{
+		text-align: center;
+		text-transform: uppercase;
+		margin: 1em 0 .5em;
+		font-weight: bold;
+		@include afterTitle($blue);
+	}
+	.owl-folio{
+		position:relative;
+		margin:0;
+		.owl-controls{
+			position:absolute;
+			top:45%;
+			width: 100%;
+			.owl-nav{
+				.owl-prev{
+					width: 42px;
+					height: 42px;
+					text-indent: -9999px;
+					background-image:url(../img/var/left-arrow.png);
+					position:absolute;
+					left:1em;
+				}
+				.owl-next{
+					width: 42px;
+					height: 42px;
+					text-indent: -9999px;
+					background-image:url(../img/var/right-arrow.png);
+					position:absolute;
+					right:1em;
+				}
+			}
+		}
+		.portfolio-item{
+			min-height: 350px;
+			background-size:cover;
+			background-position:fixed;
+			position:relative;
+			.overlay{
+				position:absolute;
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				transition: all.3s ease-out;
+				background-color:$op-blue;
+				text-align:center;
+				h3{
+					color:white;
+					text-transform: uppercase;
+					font-weight: bold;
+					margin-top:4em;
+				}
+				i{
+					background-color:$redlt;
+					color:white;
+					border-radius:100%;
+					padding:1em;
+				}
+			}
+			&:hover{
+				.overlay{
+					opacity: 1;
+					transition: all.3s ease-in;
+				}
+			}
+		}
+	}
+}
+/*----------------------------------------
+HOME - CONTACT
+----------------------------------------*/
+.contact-home{
+	p{
+		margin: 0;
+	}
+	.directions{
+		background-image:url(../img/bg/bg-contact.jpg);
+		background-size:cover;
+		background-position:center;
+		min-height: 452px;
+		.txt-section{
+			max-width: 70%;
+			margin:0 auto;
+			padding:3em 0 0;
+			color:white;
+			h2{
+				font-size: 3.5em;
+				font-weight: bold;
+			}
+			h3{
+				font-weight: bold;
+			}
+			a {
+				color: $white
+			}
+		}
+	}
+	.map-container{
+		iframe{
+			width: 100%;
+		}
+	}
+}

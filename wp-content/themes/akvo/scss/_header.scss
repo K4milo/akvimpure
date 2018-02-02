@@ -1,0 +1,82 @@
+/*----------------------------------------
+HEADER
+----------------------------------------*/
+.navbar{
+	background-color:$white;
+	margin:0;
+	padding:0;
+	width:100%;
+	top:0;
+	left:0;
+	position:fixed;
+	border:none;
+	border-radius:0;
+	z-index:999;
+	//Logo structure
+	.navbar-header{
+		.navbar-brand{
+			width: 200px;
+			height: 65px;
+			text-indent: -99999px;
+			background:url(../img/logos/logo.png) center;
+			background-repeat:no-repeat;
+			padding:2.3em 0;
+		}
+	}
+	//menu strcture
+	.navbar-collapse{
+		float: right;
+		ul.navbar-nav{
+			li{
+				a{
+					background:transparent;
+					color:$blue;
+					text-transform: uppercase;
+					padding:2.3em 2em;
+					&:hover,
+					&:focus{
+						background:transparent;
+					}
+				}
+			}
+		}
+	}
+}
+//Breadcrumbs
+.home{
+	.breadcrumbs{
+		display: none;
+	}	
+}
+
+.breadcrumbs{
+	background-image:url(../img/bg/bg-breadcrumbs.jpg);
+	background-size:100%;
+	background-attachment:fixed;
+	padding-top:90px;
+	color:white;
+	h2{
+		font-size: 2.5em;
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 48%;
+		padding:.3em 0;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.list-links{
+		width: 50%;
+		text-align: right;
+		display: inline-block;
+		vertical-align: middle;
+		span{
+			color:white;
+			margin:0 .5em;
+			text-transform: uppercase;
+			a{
+				color:white;
+				text-transform: uppercase;	
+			}
+		}
+	}	
+}

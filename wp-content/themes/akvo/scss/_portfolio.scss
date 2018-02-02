@@ -1,0 +1,50 @@
+/*----------------------------------------
+Portfolio
+----------------------------------------*/
+
+.portfolio-page{
+	h3{
+		text-align: center;
+		text-transform: uppercase;
+		margin: 1em 0 .5em;
+		font-weight: bold;
+		@include afterTitle($blue);	
+	}
+	//Articles services
+
+	.portfolio-item{
+		position:relative;
+		margin-bottom:5%;
+		//thumb
+		figure{
+			width: 100%;
+			height: 200px;
+			overflow: hidden;
+			//Mobile
+			@media(max-width:768px){
+				height: auto;
+			}
+
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		h4{
+			display: block;
+			width: 100%;
+			position:absolute;
+			bottom: 0;
+			left: 0;
+			text-transform: uppercase;
+			color:white;
+			text-align: center;
+			background-color: $op-blue;
+			padding:.5em;
+			margin: 0;
+			a{
+				color:white;
+			}
+		}
+	}
+}

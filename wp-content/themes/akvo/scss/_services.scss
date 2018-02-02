@@ -1,0 +1,72 @@
+/*----------------------------------------
+Services
+----------------------------------------*/
+.services-page{
+	padding:0;
+	h3{
+		text-align: center;
+		text-transform: uppercase;
+		margin: 1em 0 .5em;
+		font-weight: bold;
+		@include afterTitle($blue);
+	}
+	//Articles services
+	.service-cont{
+		background-size: cover;
+		position:relative;
+		//overlay colors
+		&.col-0{
+			.overlay{
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				background-color:$op-red;
+			}
+		}
+		&.col-1{
+			.overlay{
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				background-color:$op-blue;
+			}
+		}
+		//item of service
+		.service-item{
+			position:relative;
+			padding: 1%;
+			min-height: 360px;
+			text-align:center;
+			color:white;
+			z-index: 2;
+			//thumb
+			figure{
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				//Mobile
+				@media(max-width:768px){
+					height: auto;
+				}
+
+				img{
+					max-width: 100%;
+					width:auto;
+					height: auto;
+					margin:10% auto 0;
+					display: block;
+				}
+			}
+			h4{
+				text-transform: uppercase;
+			}
+			p{
+				padding:0 20%;
+			}
+		}
+	}
+}

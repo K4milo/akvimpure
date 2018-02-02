@@ -1,0 +1,157 @@
+/*----------------------------------------
+About
+----------------------------------------*/
+.page-template-about-tpl{
+	//image side
+	.post-data{
+		overflow: hidden;
+		min-height:auto;
+		//Image side
+		.img-data{
+			img{
+				max-width: 100%;
+			}
+		}
+		//Text side
+		.txt-data{
+			h2{
+				font-size: 3.4em;
+				font-weight: bold;
+				color:$blue;
+				text-transform: uppercase;
+				margin: 1em 0 .5em;
+			}
+		}
+		//Mision Vision
+		.mision,.vision{
+			.text-box{
+				max-width: 90%;
+				margin: 1em auto 3em;
+				padding: 3% 10%;
+				min-height: 276px;
+				border: 1px solid #e2e2e2;
+				box-shadow: 0 0 10px #ccc;
+				h3{
+					font-size: 3em;
+					font-weight: bold;
+					color:$blue;
+					text-transform: uppercase;
+					margin: 1em 0 .5em;
+				}
+			}
+		}
+	}
+	//buttons
+	.center.buttons{
+		text-align:center;
+		margin-bottom:1em;
+		a{
+			font-size: 1.7em;
+			font-weight: bold;
+			color:$blue;
+			text-transform: uppercase;
+		}
+	}
+	//partners
+	.partners{
+		h2{
+			font-size: 4em;
+			display: block;
+			width: 100%;
+			margin: 0 0 .5em;
+			font-weight: bold;
+			text-align:center;
+			@include afterTitle($blue);
+		}
+	}
+	//Employees
+	.employees_cont{
+		margin-bottom:1em;
+		.employees{
+			>h2{
+				font-size: 4em;
+				display: block;
+				width: 100%;
+				margin: 0 0 .5em;
+				font-weight: bold;
+				text-align:center;
+				@include afterTitle($blue);
+			}
+			//owl slider
+			.owl-employees{
+				text-align: center;
+				.owl-controls{
+					position:absolute;
+					top:45%;
+					width: 100%;
+					.owl-nav{
+						.owl-prev{
+							width: 42px;
+							height: 42px;
+							text-indent: -9999px;
+							background-image:url(../img/var/left-arrow.png);
+							position:absolute;
+							left:-4em;
+						}
+						.owl-next{
+							width: 42px;
+							height: 42px;
+							text-indent: -9999px;
+							background-image:url(../img/var/right-arrow.png);
+							position:absolute;
+							right:-4em;
+						}
+					}
+				}
+				.employee-item{
+					padding:.5em;
+					text-align:center;
+					@include desktop {
+						width: 27%;
+						display: inline-block;
+						vertical-align: middle;
+						margin: 2%;
+					}
+					img{
+						max-width: 100%;
+						display: inline-block;
+						margin: 1em auto;
+					}
+					h3{
+						font-size:2em;
+						color:$blue;
+					}
+					h2{
+						font-size:1.5em;
+						color:$blue;
+					}
+				}
+			}
+		}
+	}
+}
+
+//empleado
+.single-empleado{
+	.col-md-8{
+		figure{
+			max-width:70%;
+			margin:2em auto;
+			width:100%;
+			height:auto;
+			font-size:140%;
+		}
+	}
+	.col-md-4{
+		article{
+			margin-bottom:1em;
+			figure{
+				display:inline-block;
+				max-width:50px;
+			}
+			h3{
+				display:inline-block;
+			}
+		}
+	}
+}
