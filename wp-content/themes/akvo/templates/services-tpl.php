@@ -39,8 +39,7 @@ get_template_part('includes/header');
 		$url = $thumb['0'];
 
 	?>
-		<div class="col-md-6 service-cont col-<?php echo $cont; ?>" style="background-image: url(<?php echo $url; ?>)">
-			<div class="overlay"></div>
+		<div class="col-md-4 service-cont col-<?php echo $cont; ?>" style="background-image: url(<?php echo $url; ?>)">
 			<a href="<?php the_permalink(); ?>">
 				<article class="service-item">
 					<figure>
@@ -48,7 +47,6 @@ get_template_part('includes/header');
 					</figure>
 					</a>
 					<h4><?php the_title(); ?></h4>
-					<?php the_excerpt(); ?>
 				</article>
 			</a>
 		</div>

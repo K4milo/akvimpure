@@ -1,2 +1,0 @@
-[29-Mar-2017 18:54:12 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/akvoco/public_html/wp-content/themes/akvo/src/index.php on line 1
-[26-May-2017 01:12:16 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/akvoco/public_html/wp-content/themes/akvo/src/index.php on line 1

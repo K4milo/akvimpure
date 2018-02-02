@@ -10,7 +10,7 @@
 		<div class="employee-item">
 			<a href="<?php the_permalink(); ?>">
 				<figure>
-					<?php the_post_thumbnail('thumbnail'); ?>
+					<?php the_post_thumbnail('full'); ?>
 				</figure>
 			</a>
 			<div class="chargue">

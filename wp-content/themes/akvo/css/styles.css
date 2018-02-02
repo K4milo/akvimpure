@@ -2725,53 +2725,51 @@ About
   margin-bottom: 1em; }
   .page-template-about-tpl .employees_cont .employees > h2 {
     font-size: 4em;
+    color: #29a2d9;
     display: block;
     width: 100%;
     margin: 0 0 .5em;
     font-weight: bold;
     text-align: center; }
-    .page-template-about-tpl .employees_cont .employees > h2::after {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 4px;
-      margin: 15px auto;
-      background-color: #29a2d9; }
-  .page-template-about-tpl .employees_cont .employees .owl-employees .owl-controls {
-    position: absolute;
-    top: 45%;
-    width: 100%; }
-    .page-template-about-tpl .employees_cont .employees .owl-employees .owl-controls .owl-nav .owl-prev {
-      width: 42px;
-      height: 42px;
-      text-indent: -9999px;
-      background-image: url(../img/var/left-arrow.png);
-      position: absolute;
-      left: -4em; }
-    .page-template-about-tpl .employees_cont .employees .owl-employees .owl-controls .owl-nav .owl-next {
-      width: 42px;
-      height: 42px;
-      text-indent: -9999px;
-      background-image: url(../img/var/right-arrow.png);
-      position: absolute;
-      right: -4em; }
-  .page-template-about-tpl .employees_cont .employees .owl-employees .employee-item {
-    padding: .5em;
+  .page-template-about-tpl .employees_cont .employees .owl-employees {
     text-align: center; }
-    @media (min-width: 1200px) {
-      .page-template-about-tpl .employees_cont .employees .owl-employees .employee-item {
-        width: 27%;
+    .page-template-about-tpl .employees_cont .employees .owl-employees .owl-controls {
+      position: absolute;
+      top: 45%;
+      width: 100%; }
+      .page-template-about-tpl .employees_cont .employees .owl-employees .owl-controls .owl-nav .owl-prev {
+        width: 42px;
+        height: 42px;
+        text-indent: -9999px;
+        background-image: url(../img/var/left-arrow.png);
+        position: absolute;
+        left: -4em; }
+      .page-template-about-tpl .employees_cont .employees .owl-employees .owl-controls .owl-nav .owl-next {
+        width: 42px;
+        height: 42px;
+        text-indent: -9999px;
+        background-image: url(../img/var/right-arrow.png);
+        position: absolute;
+        right: -4em; }
+    .page-template-about-tpl .employees_cont .employees .owl-employees .employee-item {
+      padding: .5em;
+      text-align: center; }
+      @media (min-width: 1200px) {
+        .page-template-about-tpl .employees_cont .employees .owl-employees .employee-item {
+          width: 27%;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 2%; } }
+      .page-template-about-tpl .employees_cont .employees .owl-employees .employee-item img {
+        max-width: 100%;
         display: inline-block;
-        vertical-align: middle;
-        margin: 2%; } }
-    .page-template-about-tpl .employees_cont .employees .owl-employees .employee-item img {
-      margin: 1em auto; }
-    .page-template-about-tpl .employees_cont .employees .owl-employees .employee-item h3 {
-      font-size: 2em;
-      color: #29a2d9; }
-    .page-template-about-tpl .employees_cont .employees .owl-employees .employee-item h2 {
-      font-size: 1.5em;
-      color: #29a2d9; }
+        margin: 1em auto; }
+      .page-template-about-tpl .employees_cont .employees .owl-employees .employee-item h3 {
+        font-size: 2em;
+        color: #29a2d9; }
+      .page-template-about-tpl .employees_cont .employees .owl-employees .employee-item h2 {
+        font-size: 1.5em;
+        color: #29a2d9; }
 
 .single-empleado .col-md-8 figure {
   max-width: 70%;

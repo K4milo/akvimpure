@@ -70,12 +70,12 @@ About
 		.employees{
 			>h2{
 				font-size: 4em;
+				color: $blue;
 				display: block;
 				width: 100%;
 				margin: 0 0 .5em;
 				font-weight: bold;
 				text-align:center;
-				@include afterTitle($blue);
 			}
 			//owl slider
 			.owl-employees{
@@ -103,7 +103,7 @@ About
 						}
 					}
 				}
-				.employee-item{
+				.employee-item{ 
 					padding:.5em;
 					text-align:center;
 					@include desktop {
