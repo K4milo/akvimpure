@@ -2706,20 +2706,26 @@ About
     color: #29a2d9;
     text-transform: uppercase; }
 
-.page-template-about-tpl .partners h2 {
-  font-size: 4em;
-  display: block;
-  width: 100%;
-  margin: 0 0 .5em;
-  font-weight: bold;
-  text-align: center; }
-  .page-template-about-tpl .partners h2::after {
-    content: "";
+.page-template-about-tpl .partners {
+  padding-bottom: 2em; }
+  .page-template-about-tpl .partners .foogallery.fg-dark.fg-shadow-small .fg-item-inner, .page-template-about-tpl .partners .foogallery.fg-light.fg-shadow-small .fg-item-inner {
+    box-shadow: none; }
+  .page-template-about-tpl .partners .fg-default.fg-gutter-10 .fg-item {
+    vertical-align: middle; }
+  .page-template-about-tpl .partners h2 {
+    font-size: 4em;
     display: block;
-    width: 60px;
-    height: 4px;
-    margin: 15px auto;
-    background-color: #29a2d9; }
+    width: 100%;
+    margin: 0 0 .5em;
+    font-weight: bold;
+    text-align: center; }
+    .page-template-about-tpl .partners h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      margin: 15px auto;
+      background-color: #29a2d9; }
 
 .page-template-about-tpl .employees_cont {
   margin-bottom: 1em; }

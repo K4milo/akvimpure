@@ -54,6 +54,15 @@ About
 	}
 	//partners
 	.partners{
+		padding-bottom: 2em;
+		.foogallery.fg-dark.fg-shadow-small .fg-item-inner, .foogallery.fg-light.fg-shadow-small .fg-item-inner{
+			box-shadow: none;
+		}
+
+		.fg-default.fg-gutter-10 .fg-item {
+			vertical-align: middle;
+		}
+		
 		h2{
 			font-size: 4em;
 			display: block;
