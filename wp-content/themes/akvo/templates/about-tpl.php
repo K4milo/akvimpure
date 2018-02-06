@@ -45,9 +45,9 @@ get_template_part('includes/header');
         </div>
       </div>
       <div class="center buttons">
-        <a href="http://www.akvo.co/wp/politica-seguridad-y-salud-en-el-trabajo/" class="btn">Política de seguridad</a>
+        <a href="http://ak-envipure.com/politica-seguridad-y-salud-en-el-trabajo/" class="btn">Política de seguridad</a>
 
-        <a href="http://www.akvo.co/wp/politica-de-prevencion-consumo-alcohol-tabaquismo-y-drogas/" class="btn">Política de prevención de consumo</a>
+        <a href="http://ak-envipure.com/politica-de-prevencion-consumo-alcohol-tabaquismo-y-drogas/" class="btn">Política de prevención de consumo</a>
 
       </div>
 
