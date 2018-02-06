@@ -25,9 +25,10 @@ body.home{
 			}
 			.txt-content{
 				text-align: center;
-				color:white;
-				position:relative;
-				padding-top:12%;
+				color: $white;
+				max-width: em(900);
+				@include centerer;
+				
 				h2,h3 {
 					font-size: 4em;
 					display: block;

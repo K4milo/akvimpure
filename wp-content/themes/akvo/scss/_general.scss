@@ -62,6 +62,13 @@ body,html{
   }
 }
 
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 @mixin thePlaceholder ($color) {
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
