@@ -2434,7 +2434,7 @@ body.home {
       .hero-banner .hero-slider li.slide-item .txt-content {
         text-align: center;
         color: #ffffff;
-        max-width: em(900);
+        max-width: 800px;
         position: absolute;
         top: 50%;
         left: 50%;
