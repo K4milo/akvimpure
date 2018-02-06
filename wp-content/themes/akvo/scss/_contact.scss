@@ -15,10 +15,12 @@ CONTACT
 		height:348px;
 		h3{
 			text-transform:uppercase;
-			color:white;
 			font-weight:bold;
 			font-size:1.3em;
-			color:$blue;
+			color:$white;
+		}
+		a {
+			color:$white;	
 		}
 		ul{
 			padding:0;

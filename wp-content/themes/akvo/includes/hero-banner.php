@@ -1,13 +1,5 @@
 <?php
-	while(have_posts()):the_post();
-	$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-	$url = $thumb['0'];
-?>
-	<style>
-		.hero-banner{
-			background: url(<?php echo $url;?>);
-		}
-	</style>
+	while(have_posts()):the_post();?>
 
 	<?php
 		//condition for popup

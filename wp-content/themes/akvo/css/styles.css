@@ -2435,21 +2435,15 @@ body.home {
         text-align: center;
         color: white;
         position: relative;
-        padding-top: 25%; }
+        padding-top: 12%; }
         .hero-banner .hero-slider li.slide-item .txt-content h2, .hero-banner .hero-slider li.slide-item .txt-content h3 {
           font-size: 4em;
           display: block;
           width: 70%;
           display: block;
           margin: 0 auto .5em;
-          font-weight: bold; }
-          .hero-banner .hero-slider li.slide-item .txt-content h2::after, .hero-banner .hero-slider li.slide-item .txt-content h3::after {
-            content: "";
-            display: block;
-            width: 60px;
-            height: 4px;
-            margin: 15px auto;
-            background-color: #29a2d9; }
+          font-weight: bold;
+          text-transform: uppercase; }
         .hero-banner .hero-slider li.slide-item .txt-content p {
           font-size: 1.3em;
           width: 90%;
@@ -2461,14 +2455,14 @@ body.home {
       width: 100%; }
       .hero-banner .hero-slider .owl-controls .owl-nav .owl-prev {
         width: 42px;
-        height: 42px;
+        height: 72px;
         text-indent: -9999px;
         background-image: url(../img/var/left-arrow.png);
         position: absolute;
         left: 4em; }
       .hero-banner .hero-slider .owl-controls .owl-nav .owl-next {
         width: 42px;
-        height: 42px;
+        height: 72px;
         text-indent: -9999px;
         background-image: url(../img/var/right-arrow.png);
         position: absolute;
@@ -2601,14 +2595,14 @@ HOME - PORTFOLIO
     width: 100%; }
     .portfolio-home .owl-folio .owl-controls .owl-nav .owl-prev {
       width: 42px;
-      height: 42px;
+      height: 72px;
       text-indent: -9999px;
       background-image: url(../img/var/left-arrow.png);
       position: absolute;
       left: 1em; }
     .portfolio-home .owl-folio .owl-controls .owl-nav .owl-next {
       width: 42px;
-      height: 42px;
+      height: 72px;
       text-indent: -9999px;
       background-image: url(../img/var/right-arrow.png);
       position: absolute;
@@ -2634,7 +2628,7 @@ HOME - PORTFOLIO
         font-weight: bold;
         margin-top: 4em; }
       .portfolio-home .owl-folio .portfolio-item .overlay i {
-        background-color: #db4349;
+        background-color: #15516D;
         color: white;
         border-radius: 100%;
         padding: 1em; }
@@ -2745,14 +2739,14 @@ About
       width: 100%; }
       .page-template-about-tpl .employees_cont .employees .owl-employees .owl-controls .owl-nav .owl-prev {
         width: 42px;
-        height: 42px;
+        height: 72px;
         text-indent: -9999px;
         background-image: url(../img/var/left-arrow.png);
         position: absolute;
         left: -4em; }
       .page-template-about-tpl .employees_cont .employees .owl-employees .owl-controls .owl-nav .owl-next {
         width: 42px;
-        height: 42px;
+        height: 72px;
         text-indent: -9999px;
         background-image: url(../img/var/right-arrow.png);
         position: absolute;
@@ -2870,10 +2864,11 @@ CONTACT
     height: 348px; }
     .contact-page .info-cont h3 {
       text-transform: uppercase;
-      color: white;
       font-weight: bold;
       font-size: 1.3em;
-      color: #29a2d9; }
+      color: #ffffff; }
+    .contact-page .info-cont a {
+      color: #ffffff; }
     .contact-page .info-cont ul {
       padding: 0;
       color: white;
