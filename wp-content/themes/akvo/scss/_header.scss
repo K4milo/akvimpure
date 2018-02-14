@@ -26,6 +26,10 @@ HEADER
 	//menu strcture
 	.navbar-collapse{
 		float: right;
+		@include mobile {
+			float: none;
+			background-color: $lgrey;
+		}
 		ul.navbar-nav{
 			li{
 				a{
@@ -36,6 +40,10 @@ HEADER
 					&:hover,
 					&:focus{
 						background:transparent;
+					}
+					@include mobile {
+						padding: 1em;
+						border-bottom: 1px solid #ccc;
 					}
 				}
 			}

@@ -37,12 +37,19 @@ body.home{
 					margin: 0 auto .5em;
 					font-weight: bold;
 					text-transform: uppercase;
+					@include mobile{
+						width: 90%;
+						font-size: 2em;
+					}
 				}
 				p{
 					font-size:1.3em;
 					width: 90%;
 					max-width: 500px;
 					margin: 0 auto;
+					@include mobile{
+						font-size: 2em;
+					}
 				}
 			}
 		}
@@ -53,20 +60,26 @@ body.home{
 				top:45%;
 				width: 100%;
 				.owl-prev{
-					width: 42px;
+					width: 39px;
 					height: 72px;
 					text-indent: -9999px;
 					background-image:url(../img/var/left-arrow.png);
 					position:absolute;
 					left:4em;
+					@include mobile{ 
+						left: 1em;
+					}
 				}
 				.owl-next{
-					width: 42px;
+					width: 39px;
 					height: 72px;
 					text-indent: -9999px;
 					background-image:url(../img/var/right-arrow.png);
 					position:absolute;
 					right:4em;
+					@include mobile{ 
+						right: 1em;
+					}
 				}
 			}
 
@@ -220,7 +233,7 @@ HOME - PORTFOLIO
 			width: 100%;
 			.owl-nav{
 				.owl-prev{
-					width: 42px;
+					width: 39px;
 					height: 72px;
 					text-indent: -9999px;
 					background-image:url(../img/var/left-arrow.png);
@@ -228,7 +241,7 @@ HOME - PORTFOLIO
 					left:1em;
 				}
 				.owl-next{
-					width: 42px;
+					width: 39px;
 					height: 72px;
 					text-indent: -9999px;
 					background-image:url(../img/var/right-arrow.png);

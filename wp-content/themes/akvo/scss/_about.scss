@@ -95,7 +95,7 @@ About
 					width: 100%;
 					.owl-nav{
 						.owl-prev{
-							width: 42px;
+							width: 39px;
 							height: 72px;
 							text-indent: -9999px;
 							background-image:url(../img/var/left-arrow.png);
@@ -103,7 +103,7 @@ About
 							left:-4em;
 						}
 						.owl-next{
-							width: 42px;
+							width: 39px;
 							height: 72px;
 							text-indent: -9999px;
 							background-image:url(../img/var/right-arrow.png);
@@ -118,7 +118,7 @@ About
 					@include desktop {
 						width: 27%;
 						display: inline-block;
-						vertical-align: middle;
+						vertical-align: top;
 						margin: 2%;
 					}
 					img{

@@ -21,9 +21,9 @@
       <div class="post-data container single-portfolio">
         <div class="post-content">
           <div class="main col-md-8">
-            <figure>
-              <?php the_post_thumbnail('full'); ?>
-            </figure>
+            <!--figure>
+              <?php // the_post_thumbnail('full'); ?>
+            </figure-->
             <?php the_content(); ?>
           </div>
           <div class="col-md-4 related-post">
