@@ -25,6 +25,7 @@
 			if($fields){
 				foreach ( $fields as $field ) { ?>
 					<li class="slide-item" style="background-image:url('<?php echo $field['imagen_slider']; ?>')">
+						<a href="<?php echo $field['vinculo_slider']; ?>" class="overlay-lk">Link</a>
 						<div class="txt-content"><?php echo $field['texto_slider'];?></div>
 					</li>
 			<?php
